@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 minimum-scale=1,maximum-scale=1,user-scalable=no">
+  <meta name="apple-mobile-web-app-title" content="Collection">
+  <meta name="application-name" content="Collection">
+  <meta name="theme-color" content="#f3f3f3">
+  <meta name="description" content="Collection - популярные постеры Кита Харинга">
+  <meta name="keywords" content="Collection, Кит Харинг, постеры, коллекция постеров, магазин постеров">
+  <meta property="og:title" content="Collection">
+  <meta property="og:description" content="Collection - популярные постеры Кита Харинга">
+  <meta property="og:image" content="/assets/images/image.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://Collection.ru/">
+  <title>Collection</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Open+Sans:wght@300..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="/assets/icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/assets/icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/assets/icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/assets/icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/assets/icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/assets/icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/assets/icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/assets/icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+  <link rel="manifest" href="/assets/icons/manifest.json">
+</head>
+
+<body>
+  <!-- Шапка сайта -->
+  <header class="page-header">
+    <div class="page-header__container">
+      <div class="page-header__left-block">
+        <a href="catalog.html" class="page-header__catalog">
+          <svg class="page-header__catalog-icon" width="24" height="24">
+            <use xlink:href="assets/icons/symbols.svg#icon-catalog"></use>
+          </svg>
+          <span class="page-header__catalog-deck">Каталог</span>
+        </a>
+      </div>
+      <a href="index.html" class="page-header__logo">
+        <picture class="page-header__logo-picture">
+          <source media="(max-width: 1019px)" type="image/webp" srcset="assets/images/logo768.webp">
+          <source media="(max-width: 1019px)" srcset="assets/images/logo768.png">
+
+          <source type="image/webp" srcset="assets/images/logo1920.webp">
+          <img src="/assets/images/logo1920.png" alt="image" class="page-header__logo-img">
+        </picture>
+        <span class="page-header__logo-desc">Collection</span>
+      </a>
+      <nav class="page-header__nav">
+        <a href="#" class="page-header__nav-link" id="elem">
+          <svg class="page-header__nav-icon page-header__nav--heart" width="24" height="24" viewBox="0 0 24 24" fill="transparent" xmlns="http://www.w3.org/2000/svg">
+            <g stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M11.995 7.2332C10.5455 5.61 8.12832 5.17336 6.31215 6.65973C4.49599 8.1461 4.2403 10.6312 5.66654 12.3892L11.995 18.25L18.3235 12.3892C19.7498 10.6312 19.5253 8.13047 17.6779 6.65973C15.8305 5.189 13.4446 5.61 11.995 7.2332Z" />
+            </g>
+          </svg>
+          <span class="page-header__nav-desc">Избранное</span>
+          <span class="page-header__qty"></span>
+        </a>
+        <a href="#" class="page-header__nav-link">
+          <svg class="page-header__nav-icon page-header__nav--basket" width="24" height="24" viewBox="0 0 24 24" fill="transparent" xmlns="http://www.w3.org/2000/svg">
+            <g stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M7.75 7.75L7 4.75H4.75M7.75 7.75H19.25L17.6128 14.7081C17.4002 15.6115 16.5941 16.25 15.666 16.25H11.5395C10.632 16.25 9.83827 15.639 9.60606 14.7618L7.75 7.75Z" />
+              <path d="M10 20C10.5523 20 11 19.5523 11 19C11 18.4477 10.5523 18 10 18C9.44772 18 9 18.4477 9 19C9 19.5523 9.44772 20 10 20Z" fill="transparent" />
+              <path d="M17 20C17.5523 20 18 19.5523 18 19C18 18.4477 17.5523 18 17 18C16.4477 18 16 18.4477 16 19C16 19.5523 16.4477 20 17 20Z" fill="#111111" />
+            </g>
+          </svg>
+          <span class="page-header__nav-desc">Корзина</span>
+          <span class="page-header__qty2"></span>
+        </a>
+        <!-- кнопка входа  -->
+        <a href="login.html" class="page-header__nav-link">
+          <svg class="page-header__nav-icon page-header__nav--user" width="24" height="24" viewBox="0 0 24 24" fill="transparent" xmlns="http://www.w3.org/2000/svg">
+            <g stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 11.25C13.7949 11.25 15.25 9.79493 15.25 8C15.25 6.20507 13.7949 4.75 12 4.75C10.2051 4.75 8.75 6.20507 8.75 8C8.75 9.79493 10.2051 11.25 12 11.25Z" />
+              <path d="M6.84723 19.25H17.1522C18.2941 19.25 19.1737 18.2681 18.6405 17.2584C17.856 15.7731 16.0677 14 11.9997 14C7.93174 14 6.1434 15.7731 5.35897 17.2584C4.8257 18.2681 5.70531 19.25 6.84723 19.25Z" />
+            </g>
+
+          </svg>
+          <span class="page-header__nav-desc">Личный кабинет</span>
+        </a>
+        <!--кнопка выхода -->
+        <a href="#" class="page-header__nav-link page-header__nav-logIn">
+          <svg class="page-header__nav-icon" width="24" height="24">
+            <use xlink:href="assets/icons/symbols.svg#login-in"></use>
+          </svg>
+        </a>
+      </nav>
+      <button type="button" class="page-header__nav-toggle" id="js-navToggle"></button>
+    </div>
+  </header>
+  <!-- Основное содержимое страницы -->
+  <main class="main">
+    <div class="main__container">
+      <section class="catalog">
+        <div class="catalog__container">
+          <!-- Навигация -->
+          <div class="catalog__breadcrumbs breadcrumbs">
+            <a href="index.html" class="breadcrumbs__link">Главная</a>
+            <a href="#" class="breadcrumbs__link">Каталог</a>
+            <button type="button" class="breadcrumbs__btn" id="#js-hideButton">
+              <svg class="breadcrumbs__icon" width="24" height="24">
+                <use xlink:href="assets/icons/symbols.svg#arrow"></use>
+              </svg>
+            </button>
+          </div>
+          <!-- Каталог -->
+          <div class="catalog__products">
+            <h1 class="section-title catalog__title">Каталог</h1>
+            <div class="catalog__products-wrapper">
+              <div class="catalog__products-btns">
+                <button type="button" class="catalog__button-filter" id="js-btnFilter">
+                  Фильтр
+                </button>
+                <button type="reset" class="catalog__button-reset" id="js-resetBtn">
+                  Сбросить
+                </button>
+              </div>
+              <div class="catalog__products-box">
+                <div class="filter" id="js-filter">
+                  <div class="filter__sticky-close">
+                    <button type="button" class="filter__x-btn x-btn js-filterCloseBtn">
+                      <svg class="x-btn__icon" width="24" height="24">
+                        <use xlink:href="assets/icons/symbols.svg#close"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="filter__container">
+                    <h2 class="filter__title section-title">Фильтр</h2>
+                    <form class="filter__formFil formFil" id="js-filterForm">
+                      <div class="formFil__list">
+                        <div class="formFil__section">
+                          <h6 class="formFil__list-title">Коллекция</h6>
+                          <div class="formFil__check check">
+                            <label class="check__item">
+                              <input class="check__input" type="checkbox" name="collection" value="1982" />
+                              <span class="check__mark"></span>
+                              <span class="check__label">1982 года</span>
+                            </label>
+                            <label class="check__item">
+                              <input class="check__input" type="checkbox" name="collection" value="1986" checked />
+                              <span class="check__mark"></span>
+                              <span class="check__label">1986 года</span>
+                            </label>
+                            <label class="check__item">
+                              <input class="check__input" type="checkbox" name="collection" value="1987" checked />
+                              <span class="check__mark"></span>
+                              <span class="check__label">1987 года</span>
+                            </label>
+                            <label class="check__item">
+                              <input class="check__input" type="checkbox" name="collection" value="1988" />
+                              <span class="check__mark"></span>
+                              <span class="check__label">1988 года</span>
+                            </label>
+                            <label class="check__item">
+                              <input class="check__input" type="checkbox" name="collection" value="1989" />
+                              <span class="check__mark"></span>
+                              <span class="check__label">1989 года</span>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="formFil_available">
+                          <h6 class="formFil__list-title formFil__available-title" id="title-available">Наличие</h6>
+                          <div class="formFil__radio radio">
+                            <label class="radio__item">
+                              <input class="radio__input" type="radio" name="available" value="existing" checked />
+                              <span class="radio__mark"></span>
+                              <span class="radio__label">В наличие</span>
+                            </label>
+                            <label class="radio__item">
+                              <input class="radio__input" type="radio" name="available" value="order" />
+                              <span class="radio__mark"></span>
+                              <span class="radio__label">Под заказ</span>
+                            </label>
+                            <label class="radio__item">
+                              <input class="radio__input" type="radio" name="available" value="all" />
+                              <span class="radio__mark"></span>
+                              <span class="radio__label">Всё</span>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="formFil__orientation">
+                          <h6 class="formFil__list-title">Ориентация</h6>
+                          <div class="formFil__check check" id="orientation">
+                            <label class="check__item">
+                              <input class="check__input" type="checkbox" name="orientation" value="library" checked />
+                              <span class="check__mark"></span>
+                              <span class="check__label">Книжная</span>
+                            </label>
+                            <label class="check__item">
+                              <input class="check__input" type="checkbox" name="orientation" value="landscape" checked />
+                              <span class="check__mark"></span>
+                              <span class="check__label">Альбомная</span>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="formFil__price">
+                          <h6 class="formFil__price-title">Цена, &#8381;</h6>
+                          <div class="formFil__price-slider" id="range-slider"></div>
+                          <div class="formFil__price-inputs">
+                            <label class="formFil__price-label">
+                              <span class="formFil__price-text">от</span>
+                              <input type="number" min="0" max="6000" value="650" placeholder="650" class="formFil__price-input" id="input-0">
+                            </label>
+                            <label class="formFil__price-label">
+                              <span class="formFil__price-text">до</span>
+                              <input type="number" min="0" max="6000" value="5000" placeholder="5000" class="formFil__price-input" id="input-1">
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="formFil__btns">
+                        <button type="submit" class="formFil__apply formFil__apply--w50">
+                          Применить
+                        </button>
+                        <button type="reset" class="formFil__reset-btn js-resetBtn">
+                          Сбросить
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+
+                <section class="listing catalog__listing">
+                  <div class="listing__container">
+                    <!-- prettier-ignore -->
+                    <article class="catalog-card listing__catalog-card">
+                      <button class="catalog-card__btn catalog-card__btn--heart">
+                        <svg class="catalog-card__icon1" width="24" height="24" viewBox="0 0 24 24" fill="transparent" xmlns="http://www.w3.org/2000/svg">
+                          <g stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.995 7.2332C10.5455 5.61 8.12832 5.17336 6.31215 6.65973C4.49599 8.1461 4.2403 10.6312 5.66654 12.3892L11.995 18.25L18.3235 12.3892C19.7498 10.6312 19.5253 8.13047 17.6779 6.65973C15.8305 5.189 13.4446 5.61 11.995 7.2332Z" />
+                          </g>
+                        </svg>
+                      </button>
+                      <a href="#" class="catalog-card__link">
+                        <picture class="catalog-card__picture">
+                          <source type="image/webp" srcset="assets/images/catalog/1.webp">
+                          <img src="assets/images/catalog/1.png" alt="poster" class="catalog-card__img" />
+                        </picture>
+                        <div class="catalog-card__price">850 ₽</div>
+                        <h4 class="catalog-card__title">Постер | <span class="catalog-card__desc">40-60 см</span>
+                        </h4>
+                      </a>
+                      <button class="catalog-card__btn catalog-card__btn--basket">
+                        <svg class="catalog-card__icon2" width="24" height="24" viewBox="0 0 24 24" fill="transparent" xmlns="http://www.w3.org/2000/svg">
+                          <g stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M7.75 7.75L7 4.75H4.75M7.75 7.75H19.25L17.6128 14.7081C17.4002 15.6115 16.5941 16.25 15.666 16.25H11.5395C10.632 16.25 9.83827 15.639 9.60606 14.7618L7.75 7.75Z" />
+                            <path d="M10 20C10.5523 20 11 19.5523 11 19C11 18.4477 10.5523 18 10 18C9.44772 18 9 18.4477 9 19C9 19.5523 9.44772 20 10 20Z" fill="transparent" />
+                            <path d="M17 20C17.5523 20 18 19.5523 18 19C18 18.4477 17.5523 18 17 18C16.4477 18 16 18.4477 16 19C16 19.5523 16.4477 20 17 20Z" fill="#111111" />
+                          </g>
+                        </svg>
+                      </button>
+                    </article>
+                    <article class="catalog-card listing__catalog-card">
+                      <button class="catalog-card__btn catalog-card__btn--heart">
+                        <svg class="catalog-card__icon1" width="24" height="24" viewBox="0 0 24 24" fill="transparent" xmlns="http://www.w3.org/2000/svg">
+                          <g stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.995 7.2332C10.5455 5.61 8.12832 5.17336 6.31215 6.65973C4.49599 8.1461 4.2403 10.6312 5.66654 12.3892L11.995 18.25L18.3235 12.3892C19.7498 10.6312 19.5253 8.13047 17.6779 6.65973C15.8305 5.189 13.4446 5.61 11.995 7.2332Z" />
+                          </g>
+                        </svg>
+                      </button>
+                      <a href="#" class="catalog-card__link">
+                        <picture class="catalog-card__picture">
+                          <source type="image/webp" srcset="assets/images/catalog/2.webp">
+                          <img src="assets/images/catalog/2.png" alt="poster" class="catalog-card__img" />
+                        </picture>
+                        <div class="catalog-card__price">550 ₽</div>
+                        <h4 class="catalog-card__title">Постер | <span class="catalog-card__desc">30-40 см</span>
+                        </h4>
+                      </a>
+                      <button class="catalog-card__btn catalog-card__btn--basket">
+                        <svg class="catalog-card__icon2" width="24" height="24" viewBox="0 0 24 24" fill="transparent" xmlns="http://www.w3.org/2000/svg">
+                          <g stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M7.75 7.75L7 4.75H4.75M7.75 7.75H19.25L17.6128 14.7081C17.4002 15.6115 16.5941 16.25 15.666 16.25H11.5395C10.632 16.25 9.83827 15.639 9.60606 14.7618L7.75 7.75Z" />
+                            <path d="M10 20C10.5523 20 11 19.5523 11 19C11 18.4477 10.5523 18 10 18C9.44772 18 9 18.4477 9 19C9 19.5523 9.44772 20 10 20Z" fill="transparent" />
+                            <path d="M17 20C17.5523 20 18 19.5523 18 19C18 18.4477 17.5523 18 17 18C16.4477 18 16 18.4477 16 19C16 19.5523 16.4477 20 17 20Z" fill="#111111" />
+                          </g>
+                        </svg>
+                      </button>
+                    </article>
+                    <article class="catalog-card listing__catalog-card">
+                      <button class="catalog-card__btn catalog-card__btn--heart">
+                        <svg class="catalog-card__icon1" width="24" height="24" viewBox="0 0 24 24" fill="transparent" xmlns="http://www.w3.org/2000/svg">
+                          <g stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.995 7.2332C10.5455 5.61 8.12832 5.17336 6.31215 6.65973C4.49599 8.1461 4.2403 10.6312 5.66654 12.3892L11.995 18.25L18.3235 12.3892C19.7498 10.6312 19.5253 8.13047 17.6779 6.65973C15.8305 5.189 13.4446 5.61 11.995 7.2332Z" />
+                          </g>
+                        </svg>
+                      </button>
+                      <a href="#" class="catalog-card__link">
+                        <picture class="catalog-card__picture">
+                          <source type="image/webp" srcset="assets/images/catalog/3.webp">
+                          <img src="assets/images/catalog/3.png" alt="poster" class="catalog-card__img" />
+                        </picture>
+                        <div class="catalog-card__price">1 200 ₽</div>
+                        <h4 class="catalog-card__title">Постер | <span class="catalog-card__desc">40-60 см</span>
+                        </h4>
+                      </a>
+                      <button class="catalog-card__btn catalog-card__btn--basket">
+                        <svg class="catalog-card__icon2" width="24" height="24" viewBox="0 0 24 24" fill="transparent" xmlns="http://www.w3.org/2000/svg">
+                          <g stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M7.75 7.75L7 4.75H4.75M7.75 7.75H19.25L17.6128 14.7081C17.4002 15.6115 16.5941 16.25 15.666 16.25H11.5395C10.632 16.25 9.83827 15.639 9.60606 14.7618L7.75 7.75Z" />
+                            <path d="M10 20C10.5523 20 11 19.5523 11 19C11 18.4477 10.5523 18 10 18C9.44772 18 9 18.4477 9 19C9 19.5523 9.44772 20 10 20Z" fill="transparent" />
+                            <path d="M17 20C17.5523 20 18 19.5523 18 19C18 18.4477 17.5523 18 17 18C16.4477 18 16 18.4477 16 19C16 19.5523 16.4477 20 17 20Z" fill="#111111" />
+                          </g>
+                        </svg>
+                      </button>
+                    </article>
+                    <article class="catalog-card listing__catalog-card">
+                      <button class="catalog-card__btn catalog-card__btn--heart">
+                        <svg class="catalog-card__icon1" width="24" height="24" viewBox="0 0 24 24" fill="transparent" xmlns="http://www.w3.org/2000/svg">
+                          <g stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.995 7.2332C10.5455 5.61 8.12832 5.17336 6.31215 6.65973C4.49599 8.1461 4.2403 10.6312 5.66654 12.3892L11.995 18.25L18.3235 12.3892C19.7498 10.6312 19.5253 8.13047 17.6779 6.65973C15.8305 5.189 13.4446 5.61 11.995 7.2332Z" />
+                          </g>
+                        </svg>
+                      </button>
+                      <a href="#" class="catalog-card__link">
+                        <picture class="catalog-card__picture">
+                          <source type="image/webp" srcset="assets/images/catalog/4.webp">
+                          <img src="assets/images/catalog/4.png" alt="poster" class="catalog-card__img" />
+                        </picture>
+                        <div class="catalog-card__price">1 850 ₽</div>
+                        <h4 class="catalog-card__title">Постер | <span class="catalog-card__desc">60-60 см</span>
+                        </h4>
+                      </a>
+                      <button class="catalog-card__btn catalog-card__btn--basket">
+                        <svg class="catalog-card__icon2" width="24" height="24" viewBox="0 0 24 24" fill="transparent" xmlns="http://www.w3.org/2000/svg">
+                          <g stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M7.75 7.75L7 4.75H4.75M7.75 7.75H19.25L17.6128 14.7081C17.4002 15.6115 16.5941 16.25 15.666 16.25H11.5395C10.632 16.25 9.83827 15.639 9.60606 14.7618L7.75 7.75Z" />
+                            <path d="M10 20C10.5523 20 11 19.5523 11 19C11 18.4477 10.5523 18 10 18C9.44772 18 9 18.4477 9 19C9 19.5523 9.44772 20 10 20Z" fill="transparent" />
+                            <path d="M17 20C17.5523 20 18 19.5523 18 19C18 18.4477 17.5523 18 17 18C16.4477 18 16 18.4477 16 19C16 19.5523 16.4477 20 17 20Z" fill="#111111" />
+                          </g>
+                        </svg>
+                      </button>
+                    </article>
+                    <article class="catalog-card listing__catalog-card">
+                      <button class="catalog-card__btn catalog-card__btn--heart">
+                        <svg class="catalog-card__icon1" width="24" height="24" viewBox="0 0 24 24" fill="transparent" xmlns="http://www.w3.org/2000/svg">
+                          <g stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.995 7.2332C10.5455 5.61 8.12832 5.17336 6.31215 6.65973C4.49599 8.1461 4.2403 10.6312 5.66654 12.3892L11.995 18.25L18.3235 12.3892C19.7498 10.6312 19.5253 8.13047 17.6779 6.65973C15.8305 5.189 13.4446 5.61 11.995 7.2332Z" />
+                          </g>
+                        </svg>
+                      </button>
+                      <a href="#" class="catalog-card__link">
+                        <picture class="catalog-card__picture">
+                          <source type="image/webp" srcset="assets/images/catalog/5.webp">
+                          <img src="assets/images/catalog/5.png" alt="poster" class="catalog-card__img" />
+                        </picture>
+                        <div class="catalog-card__price">1 000 ₽</div>
+                        <h4 class="catalog-card__title">Постер | <span class="catalog-card__desc">40-60 см</span>
+                        </h4>
+                      </a>
+                      <button class="catalog-card__btn catalog-card__btn--basket">
+                        <svg class="catalog-card__icon2" width="24" height="24" viewBox="0 0 24 24" fill="transparent" xmlns="http://www.w3.org/2000/svg">
+                          <g stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M7.75 7.75L7 4.75H4.75M7.75 7.75H19.25L17.6128 14.7081C17.4002 15.6115 16.5941 16.25 15.666 16.25H11.5395C10.632 16.25 9.83827 15.639 9.60606 14.7618L7.75 7.75Z" />
+                            <path d="M10 20C10.5523 20 11 19.5523 11 19C11 18.4477 10.5523 18 10 18C9.44772 18 9 18.4477 9 19C9 19.5523 9.44772 20 10 20Z" fill="transparent" />
+                            <path d="M17 20C17.5523 20 18 19.5523 18 19C18 18.4477 17.5523 18 17 18C16.4477 18 16 18.4477 16 19C16 19.5523 16.4477 20 17 20Z" fill="#111111" />
+                          </g>
+                        </svg>
+                      </button>
+                    </article>
+                    <article class="catalog-card listing__catalog-card">
+                      <button class="catalog-card__btn catalog-card__btn--heart">
+                        <svg class="catalog-card__icon1" width="24" height="24" viewBox="0 0 24 24" fill="transparent" xmlns="http://www.w3.org/2000/svg">
+                          <g stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.995 7.2332C10.5455 5.61 8.12832 5.17336 6.31215 6.65973C4.49599 8.1461 4.2403 10.6312 5.66654 12.3892L11.995 18.25L18.3235 12.3892C19.7498 10.6312 19.5253 8.13047 17.6779 6.65973C15.8305 5.189 13.4446 5.61 11.995 7.2332Z" />
+                          </g>
+                        </svg>
+                      </button>
+                      <a href="#" class="catalog-card__link">
+                        <picture class="catalog-card__picture">
+                          <source type="image/webp" srcset="assets/images/catalog/6.webp">
+                          <img src="assets/images/catalog/6.png" alt="poster" class="catalog-card__img" />
+                        </picture>
+                        <div class="catalog-card__price">850 ₽</div>
+                        <h4 class="catalog-card__title">Постер | <span class="catalog-card__desc">40-60 см</span>
+                        </h4>
+                      </a>
+                      <button class="catalog-card__btn catalog-card__btn--basket">
+                        <svg class="catalog-card__icon2" width="24" height="24" viewBox="0 0 24 24" fill="transparent" xmlns="http://www.w3.org/2000/svg">
+                          <g stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M7.75 7.75L7 4.75H4.75M7.75 7.75H19.25L17.6128 14.7081C17.4002 15.6115 16.5941 16.25 15.666 16.25H11.5395C10.632 16.25 9.83827 15.639 9.60606 14.7618L7.75 7.75Z" />
+                            <path d="M10 20C10.5523 20 11 19.5523 11 19C11 18.4477 10.5523 18 10 18C9.44772 18 9 18.4477 9 19C9 19.5523 9.44772 20 10 20Z" fill="transparent" />
+                            <path d="M17 20C17.5523 20 18 19.5523 18 19C18 18.4477 17.5523 18 17 18C16.4477 18 16 18.4477 16 19C16 19.5523 16.4477 20 17 20Z" fill="#111111" />
+                          </g>
+                        </svg>
+                      </button>
+                    </article>
+                    <article class="catalog-card listing__catalog-card">
+                      <button class="catalog-card__btn catalog-card__btn--heart">
+                        <svg class="catalog-card__icon1" width="24" height="24" viewBox="0 0 24 24" fill="transparent" xmlns="http://www.w3.org/2000/svg">
+                          <g stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.995 7.2332C10.5455 5.61 8.12832 5.17336 6.31215 6.65973C4.49599 8.1461 4.2403 10.6312 5.66654 12.3892L11.995 18.25L18.3235 12.3892C19.7498 10.6312 19.5253 8.13047 17.6779 6.65973C15.8305 5.189 13.4446 5.61 11.995 7.2332Z" />
+                          </g>
+                        </svg>
+                      </button>
+                      <a href="#" class="catalog-card__link">
+                        <picture class="catalog-card__picture">
+                          <source type="image/webp" srcset="assets/images/catalog/7.webp">
+                          <img src="assets/images/catalog/7.png" alt="poster" class="catalog-card__img" />
+                        </picture>
+                        <div class="catalog-card__price">700 ₽</div>
+                        <h4 class="catalog-card__title">Постер | <span class="catalog-card__desc">30-60 см</span>
+                        </h4>
+                      </a>
+                      <button class="catalog-card__btn catalog-card__btn--basket">
+                        <svg class="catalog-card__icon2" width="24" height="24" viewBox="0 0 24 24" fill="transparent" xmlns="http://www.w3.org/2000/svg">
+                          <g stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M7.75 7.75L7 4.75H4.75M7.75 7.75H19.25L17.6128 14.7081C17.4002 15.6115 16.5941 16.25 15.666 16.25H11.5395C10.632 16.25 9.83827 15.639 9.60606 14.7618L7.75 7.75Z" />
+                            <path d="M10 20C10.5523 20 11 19.5523 11 19C11 18.4477 10.5523 18 10 18C9.44772 18 9 18.4477 9 19C9 19.5523 9.44772 20 10 20Z" fill="transparent" />
+                            <path d="M17 20C17.5523 20 18 19.5523 18 19C18 18.4477 17.5523 18 17 18C16.4477 18 16 18.4477 16 19C16 19.5523 16.4477 20 17 20Z" fill="#111111" />
+                          </g>
+                        </svg>
+                      </button>
+                    </article>
+                    <article class="catalog-card listing__catalog-card">
+                      <button class="catalog-card__btn catalog-card__btn--heart">
+                        <svg class="catalog-card__icon1" width="24" height="24" viewBox="0 0 24 24" fill="transparent" xmlns="http://www.w3.org/2000/svg">
+                          <g stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.995 7.2332C10.5455 5.61 8.12832 5.17336 6.31215 6.65973C4.49599 8.1461 4.2403 10.6312 5.66654 12.3892L11.995 18.25L18.3235 12.3892C19.7498 10.6312 19.5253 8.13047 17.6779 6.65973C15.8305 5.189 13.4446 5.61 11.995 7.2332Z" />
+                          </g>
+                        </svg>
+                      </button>
+                      <a href="#" class="catalog-card__link">
+                        <picture class="catalog-card__picture">
+                          <source type="image/webp" srcset="assets/images/catalog/8.webp">
+                          <img src="assets/images/catalog/8.png" alt="poster" class="catalog-card__img" />
+                        </picture>
+                        <div class="catalog-card__price">1 250 ₽</div>
+                        <h4 class="catalog-card__title">Постер | <span class="catalog-card__desc">40-60 см</span>
+                        </h4>
+                      </a>
+                      <button class="catalog-card__btn catalog-card__btn--basket">
+                        <svg class="catalog-card__icon2" width="24" height="24" viewBox="0 0 24 24" fill="transparent" xmlns="http://www.w3.org/2000/svg">
+                          <g stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M7.75 7.75L7 4.75H4.75M7.75 7.75H19.25L17.6128 14.7081C17.4002 15.6115 16.5941 16.25 15.666 16.25H11.5395C10.632 16.25 9.83827 15.639 9.60606 14.7618L7.75 7.75Z" />
+                            <path d="M10 20C10.5523 20 11 19.5523 11 19C11 18.4477 10.5523 18 10 18C9.44772 18 9 18.4477 9 19C9 19.5523 9.44772 20 10 20Z" fill="transparent" />
+                            <path d="M17 20C17.5523 20 18 19.5523 18 19C18 18.4477 17.5523 18 17 18C16.4477 18 16 18.4477 16 19C16 19.5523 16.4477 20 17 20Z" fill="#111111" />
+                          </g>
+                        </svg>
+                      </button>
+                    </article>
+                    <article class="catalog-card listing__catalog-card">
+                      <button class="catalog-card__btn catalog-card__btn--heart">
+                        <svg class="catalog-card__icon1" width="24" height="24" viewBox="0 0 24 24" fill="transparent" xmlns="http://www.w3.org/2000/svg">
+                          <g stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.995 7.2332C10.5455 5.61 8.12832 5.17336 6.31215 6.65973C4.49599 8.1461 4.2403 10.6312 5.66654 12.3892L11.995 18.25L18.3235 12.3892C19.7498 10.6312 19.5253 8.13047 17.6779 6.65973C15.8305 5.189 13.4446 5.61 11.995 7.2332Z" />
+                          </g>
+                        </svg>
+                      </button>
+                      <a href="#" class="catalog-card__link">
+                        <picture class="catalog-card__picture">
+                          <source type="image/webp" srcset="assets/images/catalog/9.webp">
+                          <img src="assets/images/catalog/9.png" alt="poster" class="catalog-card__img" />
+                        </picture>
+                        <div class="catalog-card__price">550 ₽</div>
+                        <h4 class="catalog-card__title">Постер | <span class="catalog-card__desc">30-40 см</span>
+                        </h4>
+                      </a>
+                      <button class="catalog-card__btn catalog-card__btn--basket">
+                        <svg class="catalog-card__icon2" width="24" height="24" viewBox="0 0 24 24" fill="transparent" xmlns="http://www.w3.org/2000/svg">
+                          <g stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M7.75 7.75L7 4.75H4.75M7.75 7.75H19.25L17.6128 14.7081C17.4002 15.6115 16.5941 16.25 15.666 16.25H11.5395C10.632 16.25 9.83827 15.639 9.60606 14.7618L7.75 7.75Z" />
+                            <path d="M10 20C10.5523 20 11 19.5523 11 19C11 18.4477 10.5523 18 10 18C9.44772 18 9 18.4477 9 19C9 19.5523 9.44772 20 10 20Z" fill="transparent" />
+                            <path d="M17 20C17.5523 20 18 19.5523 18 19C18 18.4477 17.5523 18 17 18C16.4477 18 16 18.4477 16 19C16 19.5523 16.4477 20 17 20Z" fill="#111111" />
+                          </g>
+                        </svg>
+                      </button>
+                    </article>
+                    <article class="catalog-card listing__catalog-card">
+                      <button class="catalog-card__btn catalog-card__btn--heart">
+                        <svg class="catalog-card__icon1" width="24" height="24" viewBox="0 0 24 24" fill="transparent" xmlns="http://www.w3.org/2000/svg">
+                          <g stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.995 7.2332C10.5455 5.61 8.12832 5.17336 6.31215 6.65973C4.49599 8.1461 4.2403 10.6312 5.66654 12.3892L11.995 18.25L18.3235 12.3892C19.7498 10.6312 19.5253 8.13047 17.6779 6.65973C15.8305 5.189 13.4446 5.61 11.995 7.2332Z" />
+                          </g>
+                        </svg>
+                      </button>
+                      <a href="#" class="catalog-card__link">
+                        <picture class="catalog-card__picture">
+                          <source type="image/webp" srcset="assets/images/catalog/10.webp">
+                          <img src="assets/images/catalog/10.png" alt="poster" class="catalog-card__img" />
+                        </picture>
+                        <div class="catalog-card__price">450 ₽</div>
+                        <h4 class="catalog-card__title">Постер | <span class="catalog-card__desc">20-30 см</span>
+                        </h4>
+                      </a>
+                      <button class="catalog-card__btn catalog-card__btn--basket">
+                        <svg class="catalog-card__icon2" width="24" height="24" viewBox="0 0 24 24" fill="transparent" xmlns="http://www.w3.org/2000/svg">
+                          <g stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M7.75 7.75L7 4.75H4.75M7.75 7.75H19.25L17.6128 14.7081C17.4002 15.6115 16.5941 16.25 15.666 16.25H11.5395C10.632 16.25 9.83827 15.639 9.60606 14.7618L7.75 7.75Z" />
+                            <path d="M10 20C10.5523 20 11 19.5523 11 19C11 18.4477 10.5523 18 10 18C9.44772 18 9 18.4477 9 19C9 19.5523 9.44772 20 10 20Z" fill="transparent" />
+                            <path d="M17 20C17.5523 20 18 19.5523 18 19C18 18.4477 17.5523 18 17 18C16.4477 18 16 18.4477 16 19C16 19.5523 16.4477 20 17 20Z" fill="#111111" />
+                          </g>
+                        </svg>
+                      </button>
+                    </article>
+                    <article class="catalog-card listing__catalog-card">
+                      <button class="catalog-card__btn catalog-card__btn--heart">
+                        <svg class="catalog-card__icon1" width="24" height="24" viewBox="0 0 24 24" fill="transparent" xmlns="http://www.w3.org/2000/svg">
+                          <g stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.995 7.2332C10.5455 5.61 8.12832 5.17336 6.31215 6.65973C4.49599 8.1461 4.2403 10.6312 5.66654 12.3892L11.995 18.25L18.3235 12.3892C19.7498 10.6312 19.5253 8.13047 17.6779 6.65973C15.8305 5.189 13.4446 5.61 11.995 7.2332Z" />
+                          </g>
+                        </svg>
+                      </button>
+                      <a href="#" class="catalog-card__link">
+                        <picture class="catalog-card__picture">
+                          <source type="image/webp" srcset="assets/images/catalog/11.webp">
+                          <img src="assets/images/catalog/11.png" alt="poster" class="catalog-card__img" />
+                        </picture>
+                        <div class="catalog-card__price">1 150 ₽</div>
+                        <h4 class="catalog-card__title">Постер | <span class="catalog-card__desc">50-60 см</span>
+                        </h4>
+                      </a>
+                      <button class="catalog-card__btn catalog-card__btn--basket">
+                        <svg class="catalog-card__icon2" width="24" height="24" viewBox="0 0 24 24" fill="transparent" xmlns="http://www.w3.org/2000/svg">
+                          <g stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M7.75 7.75L7 4.75H4.75M7.75 7.75H19.25L17.6128 14.7081C17.4002 15.6115 16.5941 16.25 15.666 16.25H11.5395C10.632 16.25 9.83827 15.639 9.60606 14.7618L7.75 7.75Z" />
+                            <path d="M10 20C10.5523 20 11 19.5523 11 19C11 18.4477 10.5523 18 10 18C9.44772 18 9 18.4477 9 19C9 19.5523 9.44772 20 10 20Z" fill="transparent" />
+                            <path d="M17 20C17.5523 20 18 19.5523 18 19C18 18.4477 17.5523 18 17 18C16.4477 18 16 18.4477 16 19C16 19.5523 16.4477 20 17 20Z" fill="#111111" />
+                          </g>
+                        </svg>
+                      </button>
+                    </article>
+                    <article class="catalog-card listing__catalog-card">
+                      <button class="catalog-card__btn catalog-card__btn--heart">
+                        <svg class="catalog-card__icon1" width="24" height="24" viewBox="0 0 24 24" fill="transparent" xmlns="http://www.w3.org/2000/svg">
+                          <g stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.995 7.2332C10.5455 5.61 8.12832 5.17336 6.31215 6.65973C4.49599 8.1461 4.2403 10.6312 5.66654 12.3892L11.995 18.25L18.3235 12.3892C19.7498 10.6312 19.5253 8.13047 17.6779 6.65973C15.8305 5.189 13.4446 5.61 11.995 7.2332Z" />
+                          </g>
+                        </svg>
+                      </button>
+                      <a href="#" class="catalog-card__link">
+                        <picture class="catalog-card__picture">
+                          <source type="image/webp" srcset="assets/images/catalog/12.webp">
+                          <img src="assets/images/catalog/12.png" alt="poster" class="catalog-card__img" />
+                        </picture>
+                        <div class="catalog-card__price">1 350 ₽</div>
+                        <h4 class="catalog-card__title">Постер | <span class="catalog-card__desc">40-60 см</span>
+                        </h4>
+                      </a>
+                      <button class="catalog-card__btn catalog-card__btn--basket">
+                        <svg class="catalog-card__icon2" width="24" height="24" viewBox="0 0 24 24" fill="transparent" xmlns="http://www.w3.org/2000/svg">
+                          <g stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M7.75 7.75L7 4.75H4.75M7.75 7.75H19.25L17.6128 14.7081C17.4002 15.6115 16.5941 16.25 15.666 16.25H11.5395C10.632 16.25 9.83827 15.639 9.60606 14.7618L7.75 7.75Z" />
+                            <path d="M10 20C10.5523 20 11 19.5523 11 19C11 18.4477 10.5523 18 10 18C9.44772 18 9 18.4477 9 19C9 19.5523 9.44772 20 10 20Z" fill="transparent" />
+                            <path d="M17 20C17.5523 20 18 19.5523 18 19C18 18.4477 17.5523 18 17 18C16.4477 18 16 18.4477 16 19C16 19.5523 16.4477 20 17 20Z" fill="#111111" />
+                          </g>
+                        </svg>
+                      </button>
+                    </article>
+                  </div>
+                  <footer class="paginator listing__paginator">
+                    <button type="button" class="paginator__arrow-prev arrowEl">
+                      <svg class="arrowEl__icon" width="24" height="24">
+                        <use xlink:href="assets/icons/symbols.svg#arrow-left"></use>
+                      </svg>
+                    </button>
+                    <button type="button" class="paginator__prev">Назад</button>
+                    <div class="paginator__list">
+                      <button type="button" class="paginator__list-btn">1</button>
+                      <button type="button" class="paginator__list-btn">2</button>
+                      <button type="button" class="paginator__list-btn">3</button>
+                      <button type="button" class="paginator__list-btn">4</button>
+                      <button type="button" class="paginator__list-btn">5</button>
+                      <button type="button" class="paginator__list-btn">6</button>
+                      <button type="button" class="paginator__list-btn">...</button>
+                      <button type="button" class="paginator__list-btn">11</button>
+                    </div>
+                    <button type="button" class="paginator__arrow-next arrowEl">
+                      <svg class="arrowEl__icon" width="24" height="24">
+                        <use xlink:href="assets/icons/symbols.svg#arrow-right"></use>
+                      </svg>
+                    </button>
+                    <button type="button" class="paginator__next">Вперед</button>
+                  </footer>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <!-- Подвал сайта -->
+  <section class="page-footer">
+    <div class="page-footer__line">
+      <div class="page-footer__line-box">
+        <picture class="page-footer__logo-picture">
+          <source media="(max-width: 1019px)" type="image/webp" srcset="assets/images/logo768.webp">
+          <source media="(max-width: 1019px)" srcset="assets/images/logo768.png">
+
+          <source type="image/webp" srcset="assets/images/logo1920.webp">
+          <img src="/assets/images/logo1920.png" alt="image" class="page-footer__logo-img">
+        </picture>
+        <span class="page-footer__logo-desc">Collection</span>
+      </div>
+    </div>
+    <div class="page-footer__container">
+      <div class="page-footer__main">
+        <div class="page-footer__info">
+          <div class="page-footer__info-list">
+            <h4 class="page-footer__title">Каталог</h4>
+            <nav class="page-footer__nav">
+              <a href="#" class="page-footer__nav-link">Коллекция 1982</a>
+              <a href="#" class="page-footer__nav-link">Коллекция 1986</a>
+              <a href="#" class="page-footer__nav-link">Коллекция 1987</a>
+              <a href="#" class="page-footer__nav-link">Коллекция 1988</a>
+              <a href="#" class="page-footer__nav-link">Коллекция 1989</a>
+            </nav>
+          </div>
+          <div class="page-footer__info-list">
+            <h4 class="page-footer__title">Покупателю</h4>
+            <nav class="page-footer__nav">
+              <a href="#" class="page-footer__nav-link">Как сделать заказ</a>
+              <a href="#" class="page-footer__nav-link">Правила возврата</a>
+              <a href="#" class="page-footer__nav-link">Контакты</a>
+            </nav>
+          </div>
+        </div>
+        <div class="page-footer__social">
+          <h4 class="page-footer__title page-footer__title-right">На связи</h4>
+          <div class="page-footer__social-icon">
+            <a href="#" class="page-footer__social-icon-link">
+              <svg class="page-footer__social-icon-svg1" width="24" height="24">
+                <use xlink:href="assets/icons/symbols.svg#telegram"></use>
+              </svg>
+            </a>
+            <a href="#" class="page-footer__social-icon-link">
+              <svg class="page-footer__social-icon-svg2" width="24" height="24">
+                <use xlink:href="assets/icons/symbols.svg#whatsapp"></use>
+              </svg>
+            </a>
+            <a href="#" class="page-footer__social-icon-link">
+              <svg class="page-footer__social-icon-svg3" width="23" height="13">
+                <use xlink:href="assets/icons/symbols.svg#VK"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="page-footer__terms">
+        <a href="#" class="page-footer__terms-link">Политика конфиденциальности</a>
+        <a href="#" class="page-footer__terms-link">Cookies</a>
+      </div>
+    </div>
+  </section>
+  <!-- Скрипты -->
+  <script src="scripts/jquery-3.7.1.min.js"></script>
+  <script src="scripts/nouislider.min.js"></script>
+  <script src="scripts/catalog.js"></script>
+  <script src="scripts/main.js"></script>
+</body>
+
+</html>

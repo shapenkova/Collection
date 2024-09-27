@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 minimum-scale=1,maximum-scale=1,user-scalable=no">
+  <meta name="apple-mobile-web-app-title" content="Collection">
+  <meta name="application-name" content="Collection">
+  <meta name="theme-color" content="#f3f3f3">
+  <meta name="description" content="Collection - популярные постеры Кита Харинга">
+  <meta name="keywords" content="Collection, Кит Харинг, постеры, коллекция постеров, магазин постеров">
+  <meta property="og:title" content="Collection">
+  <meta property="og:description" content="Collection - популярные постеры Кита Харинга">
+  <meta property="og:image" content="/assets/images/image.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://Collection.ru/">
+  <title>Collection</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Open+Sans:wght@300..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="/assets/icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/assets/icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/assets/icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/assets/icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/assets/icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/assets/icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/assets/icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/assets/icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+  <link rel="manifest" href="/assets/icons/manifest.json">
+</head>
+
+<body>
+  <!-- Шапка сайта -->
+  <header class="page-header">
+    <div class="page-header__container">
+      <div class="page-header__left-block">
+        <a href="catalog.html" class="page-header__catalog">
+          <svg class="page-header__catalog-icon" width="24" height="24">
+            <use xlink:href="assets/icons/symbols.svg#icon-catalog"></use>
+          </svg>
+          <span class="page-header__catalog-deck">Каталог</span>
+        </a>
+      </div>
+      <a href="index.html" class="page-header__logo">
+        <picture class="page-header__logo-picture">
+          <source media="(max-width: 1019px)" type="image/webp" srcset="assets/images/logo768.webp">
+          <source media="(max-width: 1019px)" srcset="assets/images/logo768.png">
+
+          <source type="image/webp" srcset="assets/images/logo1920.webp">
+          <img src="/assets/images/logo1920.png" alt="image" class="page-header__logo-img">
+        </picture>
+        <span class="page-header__logo-desc">Collection</span>
+      </a>
+      <nav class="page-header__nav">
+        <a href="#" class="page-header__nav-link" id="elem">
+          <svg class="page-header__nav-icon page-header__nav--heart" width="24" height="24" viewBox="0 0 24 24" fill="transparent" xmlns="http://www.w3.org/2000/svg">
+            <g stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M11.995 7.2332C10.5455 5.61 8.12832 5.17336 6.31215 6.65973C4.49599 8.1461 4.2403 10.6312 5.66654 12.3892L11.995 18.25L18.3235 12.3892C19.7498 10.6312 19.5253 8.13047 17.6779 6.65973C15.8305 5.189 13.4446 5.61 11.995 7.2332Z" />
+            </g>
+          </svg>
+          <span class="page-header__nav-desc">Избранное</span>
+          <span class="page-header__qty"></span>
+        </a>
+        <a href="#" class="page-header__nav-link">
+          <svg class="page-header__nav-icon page-header__nav--basket" width="24" height="24" viewBox="0 0 24 24" fill="transparent" xmlns="http://www.w3.org/2000/svg">
+            <g stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M7.75 7.75L7 4.75H4.75M7.75 7.75H19.25L17.6128 14.7081C17.4002 15.6115 16.5941 16.25 15.666 16.25H11.5395C10.632 16.25 9.83827 15.639 9.60606 14.7618L7.75 7.75Z" />
+              <path d="M10 20C10.5523 20 11 19.5523 11 19C11 18.4477 10.5523 18 10 18C9.44772 18 9 18.4477 9 19C9 19.5523 9.44772 20 10 20Z" fill="transparent" />
+              <path d="M17 20C17.5523 20 18 19.5523 18 19C18 18.4477 17.5523 18 17 18C16.4477 18 16 18.4477 16 19C16 19.5523 16.4477 20 17 20Z" fill="#111111" />
+            </g>
+          </svg>
+          <span class="page-header__nav-desc">Корзина</span>
+          <span class="page-header__qty2"></span>
+        </a>
+        <!-- кнопка входа  -->
+        <a href="login.html" class="page-header__nav-link">
+          <svg class="page-header__nav-icon page-header__nav--user" width="24" height="24" viewBox="0 0 24 24" fill="transparent" xmlns="http://www.w3.org/2000/svg">
+            <g stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 11.25C13.7949 11.25 15.25 9.79493 15.25 8C15.25 6.20507 13.7949 4.75 12 4.75C10.2051 4.75 8.75 6.20507 8.75 8C8.75 9.79493 10.2051 11.25 12 11.25Z" />
+              <path d="M6.84723 19.25H17.1522C18.2941 19.25 19.1737 18.2681 18.6405 17.2584C17.856 15.7731 16.0677 14 11.9997 14C7.93174 14 6.1434 15.7731 5.35897 17.2584C4.8257 18.2681 5.70531 19.25 6.84723 19.25Z" />
+            </g>
+
+          </svg>
+          <span class="page-header__nav-desc">Личный кабинет</span>
+        </a>
+        <!--кнопка выхода -->
+        <a href="#" class="page-header__nav-link page-header__nav-logIn">
+          <svg class="page-header__nav-icon" width="24" height="24">
+            <use xlink:href="assets/icons/symbols.svg#login-in"></use>
+          </svg>
+        </a>
+      </nav>
+      <button type="button" class="page-header__nav-toggle" id="js-navToggle"></button>
+    </div>
+  </header>
+  <!-- Основное содержимое страницы -->
+  <main class="main">
+    <div class="main__container">
+      <!-- Слайдер-коллекция -->
+      <section class="collection">
+        <div class="collection__wrapper">
+          <div class="collection__imgBox">
+            <picture class="collection__picturePhrase">
+              <source media="(max-width: 399px)" type="image/webp" srcset="assets/images/phrase/text-320.webp">
+              <source media="(max-width: 399px)" srcset="assets/images/phrase/text-320.png">
+
+              <source media="(max-width: 1339px)" type="image/webp" srcset="assets/images/phrase/text-768.webp">
+              <source media="(max-width: 1339px)" srcset="assets/images/phrase/text-768.png">
+
+              <source media="(max-width: 1659px)" type="image/webp" srcset="assets/images/phrase/text-1340.webp">
+              <source media="(max-width: 1659px)" srcset="assets/images/phrase/text-1340.png">
+
+              <source type="image/webp" srcset="assets/images/phrase/text.png">
+              <img src="assets/images/phrase/text.png" alt="img" class="collection__imgPhrase" />
+            </picture>
+          </div>
+
+          <div class="collection__container">
+            <!-- кнопка -->
+            <div class="collection__button">
+              <p class="collection__button-desc"> Коллекция<span class="collection__button-year"></span>
+              </p>
+              <a href="#" class="collection__link-look">Смотреть</a>
+            </div>
+            <!-- пагинация-слайдер -->
+            <div class="swiper-pagination collection__pagination"></div>
+            <!-- слайдер -->
+            <div class="swiper js-swiper1 collection__swiper1">
+              <div class="swiper-wrapper swiper--1s">
+                <div class="swiper-slide">
+                  <picture class="collection__picture">
+                    <source type="image/webp" srcset="assets/images/collection/82.webp">
+                    <img src="assets/images/collection/82.png" alt="img-82" class="collection_picture-img" />
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture class="collection__picture">
+                    <source type="image/webp" srcset="assets/images/collection/86.webp">
+                    <img src="assets/images/collection/86.png" alt="img-86" class="collection__picture-img" />
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture class="collection_picture">
+                    <source type="image/webp" srcset="assets/images/collection/87.webp">
+                    <img src="assets/images/collection/87.png" alt="img-87" class="collection__picture-img" />
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture class="collection__picture">
+                    <source type="image/webp" srcset="assets/images/collection/88.webp">
+                    <img src="assets/images/collection/88.png" alt="img-88" class="collection__picture-img" />
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture class="collection__picture">
+                    <source type="image/webp" srcset="assets/images/collection/89.webp">
+                    <img src="assets/images/collection/89.png" alt="img-89" class="collection__picture-img" />
+                  </picture>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Статья -->
+      <section class="story">
+        <div class="story__container ">
+          <div class="story__textContent">
+            <h2 class="section-title story__title">Кит Харинг</h2>
+            <p class="story__description">
+              Застенчивый очкарик и гений поп-арта Кит Харинг родился 4 мая 1958 года в Пенсильвании.
+            </p>
+            <p class="story__description story__description-indent">История его жизни вписывается в&nbsp;представления о&nbsp;жизни&nbsp;гения поп-арта: родился, жил, творил, был гомосексуалистом и рано умер от СПИДа.
+            </p>
+          </div>
+          <div class="story__block">
+            <picture class="story__block-picture">
+              <source media="(max-width: 599px)" type="image/webp" srcset="assets/images/story/харинг-320.webp">
+              <source media="(max-width: 599px)" srcset="assets/images/story/харинг-320.jpg">
+
+              <source media="(max-width: 1339px)" type="image/webp" srcset="assets/images/story/харинг-768.webp">
+              <source media="(max-width: 1339px)" srcset="assets/images/story/харинг-768.jpg">
+
+              <source type="image/webp" srcset="assets/images/story/харинг-1920.webp">
+              <img src="assets/images/story/харинг-1920.jpg" alt="image" class="story__block-picture-img" />
+            </picture>
+
+            <div class="story__block-sign">
+              <svg class="story__block-sign-icon" width="100" height="40">
+                <use xlink:href="assets/icons/symbols.svg#signature"></use>
+              </svg>
+              <p class="story__block-sign-desc">Кит Харинг, 1982 г.</p>
+            </div>
+          </div>
+          <a href="haring.html" class="story__link-read btn">Читать статью</a>
+        </div>
+      </section>
+      <!-- Постеры (слайдер)-->
+      <section class="postersSlider">
+        <div class="postersSlider__container">
+          <h2 class="section-title postersSlider__title">Популярные постеры</h2>
+          <div class="postersSlider__content">
+            <!-- рамка -->
+            <div class="postersSlider__frame"></div>
+            <!-- слайдер -->
+            <div class="postersSlider__box" id="js-sliderSlick">
+              <div class="postersSlider__item item--gol">
+                <a href="#" class="postersSlider__link">
+                  <picture class="postersSlider__picture">
+                    <source media="(max-width: 1659px)" type="image/webp" srcset="assets/images/posters/image-4.webp">
+                    <source media="(max-width: 1659px)" srcset="assets/images/posters/image-4.jpg">
+
+                    <source type="image/webp" srcset="assets/images/posters/image-1.webp">
+                    <img src="assets/images/posters/image-1.jpg" alt="img" class="postersSlider__picture-img" />
+                  </picture>
+                </a>
+              </div>
+              <div class="postersSlider__item item--yellow">
+                <a href="#" class="postersSlider__link">
+                  <picture class="postersSlider__picture">
+                    <source type="image/webp" srcset="assets/images/posters/image-2.webp">
+                    <img src="assets/images/posters/image-2.jpg" alt="img" class="postersSlider__picture-img" />
+                  </picture>
+                </a>
+              </div>
+              <div class="postersSlider__item item--green">
+                <a href="#" class="postersSlider__link">
+                  <picture class="postersSlider__picture">
+                    <source type="image/webp" srcset="assets/images/posters/img-3.webp">
+                    <img src="assets/images/posters/img-3.jpg" alt="img" class="postersSlider__picture-img" />
+                  </picture>
+                </a>
+              </div>
+              <div class="postersSlider__item item--orange">
+                <a href="#" class="postersSlider__link">
+                  <picture class="postersSlider__picture">
+                    <source media="(max-width: 1659px)" type="image/webp" srcset="assets/images/posters/image-1.webp">
+                    <source media="(max-width: 1659px)" srcset="assets/images/posters/image-1.jpg">
+
+                    <source type="image/webp" srcset="assets/images/posters/image-4.webp">
+                    <img src="assets/images/posters/image-4.jpg" alt="img" class="postersSlider__picture-img" />
+                  </picture>
+                </a>
+              </div>
+              <div class="postersSlider__item item--yellow">
+                <a href="#" class="postersSlider__link">
+                  <picture class="postersSlider__picture">
+                    <source type="image/webp" srcset="assets/images/posters/image-5.webp">
+                    <img src="assets/images/posters/image-5.jpg" alt="img" class="postersSlider__picture-img" />
+                  </picture>
+                </a>
+              </div>
+            </div>
+            <!-- кнопки -->
+            <div class="postersSlider__btns">
+              <button type="button" class="arrow2 arrowSlick slick-prev">
+                <svg class="arrow2__icon arrowSlick__icon" width="24" height="24">
+                  <use xlink:href="assets/icons/symbols.svg#arrow-left"></use>
+                </svg>
+              </button>
+              <button type="button" class=" arrow2 arrowSlick slick-next">
+                <svg class="arrow2__icon arrowSlick__icon" width="24" height="24">
+                  <use xlink:href="assets/icons/symbols.svg#arrow-right"></use>
+                </svg>
+              </button>
+            </div>
+            <!-- пагинация -->
+            <div class="pagination-text postersSlider__sign-desc" id="paginationText">
+              Andy Mouse, 1986
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Адресса магазинов + карта -->
+      <section class="address">
+        <div class="address__container">
+          <h2 class="section-title address__title">Адреса магазинов</h2>
+          <div class="address__wrapper">
+            <div class="address__wrapper-content">
+              <div class="address__wrapper-box">
+                <div class="address__info-card info-card">
+                  <h4 class="info-card__title">Pop Shop «1987»</h4>
+                  <p class="info-card__desc">
+                    Проспект Ленина, 121
+                    <span class="info-card__desc-weight">ЦУМ</span>,
+                    <span class="info-card__desc-sing">торговый центр</span>
+                  </p>
+                  <div class="info-card__timetable">
+                    <svg class="info-card__timetable-svg" width="11" height="11">
+                      <use xlink:href="assets/icons/symbols.svg#circle"></use>
+                    </svg>
+                    <p class="info-card__timetable-desc">Открыто до 21.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="address__wrapper-box">
+                <div class="address__info-card info-card">
+                  <h4 class="info-card__title">Pop Shop
+                    <br>«Лающая&nbsp;собака»
+                  </h4>
+                  <p class="info-card__desc">
+                    Проспект Ленина, 15
+                    <br>
+                    <span class="info-card__desc-weight">999</span>
+                    <span class="info-card__desc-sing">,торговый центр</span>
+                  </p>
+                  <div class="info-card__timetable">
+                    <svg class="info-card__timetable-svg" width="11" height="11">
+                      <use xlink:href="assets/icons/symbols.svg#circle"></use>
+                    </svg>
+                    <p class="info-card__timetable-desc">Открыто до 21.00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="address__map" id="js-contactsMap"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <!-- Подвал сайта -->
+  <section class="page-footer">
+    <div class="page-footer__line">
+      <div class="page-footer__line-box">
+        <picture class="page-footer__logo-picture">
+          <source media="(max-width: 1019px)" type="image/webp" srcset="assets/images/logo768.webp">
+          <source media="(max-width: 1019px)" srcset="assets/images/logo768.png">
+
+          <source type="image/webp" srcset="assets/images/logo1920.webp">
+          <img src="/assets/images/logo1920.png" alt="image" class="page-footer__logo-img">
+        </picture>
+        <span class="page-footer__logo-desc">Collection</span>
+      </div>
+    </div>
+    <div class="page-footer__container">
+      <div class="page-footer__main">
+        <div class="page-footer__info">
+          <div class="page-footer__info-list">
+            <h4 class="page-footer__title">Каталог</h4>
+            <nav class="page-footer__nav">
+              <a href="#" class="page-footer__nav-link">Коллекция 1982</a>
+              <a href="#" class="page-footer__nav-link">Коллекция 1986</a>
+              <a href="#" class="page-footer__nav-link">Коллекция 1987</a>
+              <a href="#" class="page-footer__nav-link">Коллекция 1988</a>
+              <a href="#" class="page-footer__nav-link">Коллекция 1989</a>
+            </nav>
+          </div>
+          <div class="page-footer__info-list">
+            <h4 class="page-footer__title">Покупателю</h4>
+            <nav class="page-footer__nav">
+              <a href="#" class="page-footer__nav-link">Как сделать заказ</a>
+              <a href="#" class="page-footer__nav-link">Правила возврата</a>
+              <a href="#" class="page-footer__nav-link">Контакты</a>
+            </nav>
+          </div>
+        </div>
+        <div class="page-footer__social">
+          <h4 class="page-footer__title page-footer__title-right">На связи</h4>
+          <div class="page-footer__social-icon">
+            <a href="#" class="page-footer__social-icon-link">
+              <svg class="page-footer__social-icon-svg1" width="24" height="24">
+                <use xlink:href="assets/icons/symbols.svg#telegram"></use>
+              </svg>
+            </a>
+            <a href="#" class="page-footer__social-icon-link">
+              <svg class="page-footer__social-icon-svg2" width="24" height="24">
+                <use xlink:href="assets/icons/symbols.svg#whatsapp"></use>
+              </svg>
+            </a>
+            <a href="#" class="page-footer__social-icon-link">
+              <svg class="page-footer__social-icon-svg3" width="23" height="13">
+                <use xlink:href="assets/icons/symbols.svg#VK"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="page-footer__terms">
+        <a href="#" class="page-footer__terms-link">Политика конфиденциальности</a>
+        <a href="#" class="page-footer__terms-link">Cookies</a>
+      </div>
+    </div>
+  </section>
+  <!-- Скрипты -->
+  <script src="scripts/jquery-3.7.1.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key="></script>
+  <script src="scripts/swiper-bundle.min.js"></script>
+  <script src="scripts/slick.min.js"></script>
+  <script src="scripts/swiperFirst.js"></script>
+  <script src="scripts/sliderSlick.js"></script>
+  <script src="scripts/main.js"></script>
+</body>
+
+</html>
